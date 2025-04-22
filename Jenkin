@@ -1,0 +1,17 @@
+pipeline{
+    agent any
+
+    stages{
+        stage('Build'){
+            steps{
+                echo "test build. First CI in jenkins"
+                sh 'cat hello.txt
+            }
+        }
+        stage('Done'){
+            steps{
+                echo "Build complete.you can add more here later'"
+            }
+        }
+    }
+}
