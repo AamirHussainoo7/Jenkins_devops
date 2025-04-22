@@ -5,7 +5,7 @@ pipeline{
         stage('Build'){
             steps{
                 echo "test build. First CI in jenkins"
-                sh 'cat hello.txt
+                sh 'cat hello.txt'
             }
         }
         stage('Done'){
